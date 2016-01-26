@@ -5,8 +5,15 @@
   overflow: visible;
   min-height: 23px;
 
-  span {
+  & > span {
     font-size: 1.45em;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 99%;
+    &.__file_name{
+      width: auto;
+    }
   }
 
 	&.__hidden { display:none; }
